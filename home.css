@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #1d2023;
+    background-image: url(pexels-kseniya-lapteva-9280915.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+h2{
+    color: #fff;
+    font-size: 40px;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+    box-shadow: #1d2023;
+    background-size: 100px;
+    background-color: #36383d;
+    border-color: #292c31;
+    border-radius: 10px;
+
+}
+.prompt{
+    background-color: #292c31;
+    box-shadow: #1d2023;
+    padding: 5px;
+    width: 620px;
+    border: 3px solid #36383d;
+    border-radius: 10px;
+}
+input,button{
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+input{
+    background-color: #292c31;
+    width:75%;
+    outline: none;
+    font-size: bold;
+    
+}
+.image{
+    width: 400px;
+}
+button{
+    background-color: #36383d;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #45464a;
+}
+.Images{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    position: relative;
+        width: 190px;
+        height: 254px;
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+
+}
+.Images:hover {
+    transform: translateY(-20px);
+}
+.Images::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    border-radius: 15px;
+}
+.Images::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+.Images div{
+    position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+        border-radius: 15px;
+}
+.Images div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.Images div img{
+    position: relative;
+        /* padding: 10px; */
+        border-radius: 15px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.5em;
+
+
+}
